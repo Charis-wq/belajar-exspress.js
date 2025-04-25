@@ -1,0 +1,36 @@
+ExspressJS
+exspresjs adalah salah satu web framework opensource paling populer di nodejs
+exspressjs pertama kali di buat pasa tahun 2010 dan karena sangat populer exspressjs sekarang sudah menjadi hal yang wajib dikuasai ketika kita akan membuat web menggunakan nodejs.
+
+Minimalist 
+exspressjs sangat minimalist tidak memiliki banyak fitur seperti web framewrok di bahasa pemograman lain seperti laravel,ruby on rails atau django
+karena sangat minimalist biasanya exspressjs akan di intergrasikan dengan banyak liberary nodejs lainnya
+oleh karena itu programer bisa bebas memilih liberary nodejs yang ingin dia intregrasikan dengan exspressjs.
+
+Application
+saat kita membuat web menggunakan  exspressjs kita akan membuat object application 
+application adalah object utama dalam liberary exspressjs.
+
+Menjalankan Application
+application secara default tidak berjalan jika kita ingin melakukan application kita perlu menggunakan method listen/port
+dimana port adalah nomor yang ingin kita gunakan untuk menjalankan web 
+pastikan port yang kita pilih tidak bentrok atau sama dengan application yang lain.
+
+Basic Routing
+Routing
+saat kita membuat web biasanya kita akan membuat banyak sekali URL path
+routing merupakan teknik yang di gunakan untuk meneruskan request dari URL path ke callback yang kita tuju
+routing di expressjs bisa menggunakan object application dan menggunakan method sesuai dengan nama HTTP methodnya.
+
+Routing Method 
+
+app.connect(path, callback)   HTTP Method CONNECT
+app.get(path, callback)       HTTP Method GET
+app.post(path, callback)      HTTP Method POST
+app.put(path, callback)       HTTP Method PUT
+app.delete(path, callback)    HTTP Method DELETE
+app.option(path, callback)    HTTP Method OPTION
+app.trace(path, callback)     HTTP Method TRACE
+app.head(path, callback)      HTTP Method HEAD
+app.patch(path, callback)     HTTP Method PATCH
+app.all(path, callback)       Semua HTTP METHOD 
