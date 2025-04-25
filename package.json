@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Charis-wq/belajar-exspress.js"
   },
   "scripts": {
     "test": "jest"
