@@ -34,3 +34,18 @@ app.trace(path, callback)     HTTP Method TRACE
 app.head(path, callback)      HTTP Method HEAD
 app.patch(path, callback)     HTTP Method PATCH
 app.all(path, callback)       Semua HTTP METHOD 
+
+Unit Test 
+salah satu yang sulit ketika kita membuat aplikasi web yang harus berjalan yaitu melakukan automation test 
+jika kita melakukan manual test terlihat mudah tingggal kita buka melalui web browser
+namun dalam pekerjaanya sehari-hari lam bat lain hal ini akan sangat menyulitkan kita ketika kita harus melakukan manual test jika terdapata perubahan di aplikasi kita 
+oleh karena itu sanagat di rekomendasikan menggunakan unit test walaupun dalam bentuk web.
+
+Supertest
+supertest adalah salah satu liuberary yang bisa digunakan untuk membantu melakukan pengetesan web expressjs 
+dengan supertest kita bisa lebih mudah membuat unit test dibanding melakukan manualnya.
+
+Request 
+saat kita membuat callback di router,parameter pertama adalah object request yang secara otomatis diisi oleh expressjs
+object request akan diisi informasi tentang HTTP request yang masuk ke callback tersebut 
+ada banyak sekali informasi HTTP request yang bisa kita ambil dari object request seperti querry param ,header, body dan lain-lain.
