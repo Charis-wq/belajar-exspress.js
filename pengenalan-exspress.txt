@@ -49,3 +49,17 @@ Request
 saat kita membuat callback di router,parameter pertama adalah object request yang secara otomatis diisi oleh expressjs
 object request akan diisi informasi tentang HTTP request yang masuk ke callback tersebut 
 ada banyak sekali informasi HTTP request yang bisa kita ambil dari object request seperti querry param ,header, body dan lain-lain.
+
+Request URL
+untuk mendapatkan URL saat ini kita bisa menggunakan object request untuk mendapatkan informasinya.
+
+-req.originalURL: untuk mendapatkan url secara full beserta query paramnya
+-req.path: untuk mendapatakan query URL tanpa param 
+-req.hostname: untuk mendapatkan nama host atau domain dari web kita
+-req.protocol: untuk mendapatkan protocol dari URL web kita
+-req.secure: untuk mengecek apakah URLnya https atau bukan
+-req.subdomain: untuk mendapatkan array subdomain dari URL web kita
+
+Request Query Param
+request juga bisa digunakan untuk mengambil data query parameter
+secra otomatis query parameter akan di simpan dalam bentuk object di req.query.
