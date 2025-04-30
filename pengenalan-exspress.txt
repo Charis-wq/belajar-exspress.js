@@ -63,3 +63,24 @@ untuk mendapatkan URL saat ini kita bisa menggunakan object request untuk mendap
 Request Query Param
 request juga bisa digunakan untuk mengambil data query parameter
 secra otomatis query parameter akan di simpan dalam bentuk object di req.query.
+
+Request Header 
+object request juga bisa kita gunakan untuk mendapatkan informasi dari HTTP header dari request
+kita bisa menggunakan method req.get(name) atau req.header(name) untuk mendapatkan header berdasarkan name khusus untuk HTTP header namenya adalah case insentive.
+
+Response
+pada callback routing expressjs terdapat parameter kedua yaitu response 
+response merupkan object reperentasi darim HTTP response
+kita bisa mengubah data HTTP response melalui object response tersebut
+
+Response Status
+saat kita ingin mengubah HTTP status dari HTTP response yang kita buat kita bisa menggunakan method res.status(code)
+
+Response Header
+kita juga bisa merubah HTTP response header dengan mernggunakan method res.set(name.value) atau res.header(name.value)
+atau jika ingin langsung beberapa name kita bisa masukan dalam bentuk object ke dalam parameter namenya
+
+Response Body 
+untuk mengubah response body kita bisa menggunakan method res.send(body)
+dimana parameter body bisa kita kirim dalam bentuk buffer atau string baik itu text,html,json dan lain-lain.
+
